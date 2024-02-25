@@ -82,5 +82,5 @@ config/database
 /config/database.js
 
 # Logging.js 
-/startup/logging.js
+# /startup/logging.js
 *audit.json
