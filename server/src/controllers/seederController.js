@@ -13,7 +13,7 @@ const saveSeeder = asyncHandler(async (req, res) => {
   try {
     // create admin
     const salt = await bcrypt.genSalt(10);
-    const encryptPass = await bcrypt.hash("123", salt);
+    const encryptPass = await bcrypt.hash("123456abc", salt);
     // Seed a new user
     const newUser = new Users({
       full_name: "Amjad",
