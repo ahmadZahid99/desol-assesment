@@ -8,6 +8,7 @@ import { bgBlur } from "../utils/cssStyles";
 // components
 
 import AccountPopover from "./AccountPopover";
+import Image from "next/image";
 
 // ----------------------------------------------------------------------
 
@@ -51,6 +52,7 @@ const Header = ({ children }) => {
             px: { lg: 5 },
           }}
         >
+          <Image src="/main.svg" width="145" height="40" alt="Desol Logo" />
           {renderContent}
         </Toolbar>
       </AppBar>
