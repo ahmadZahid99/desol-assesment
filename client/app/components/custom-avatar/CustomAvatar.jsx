@@ -1,3 +1,4 @@
+"use client";
 import PropTypes from "prop-types";
 import { forwardRef } from "react";
 // @mui
@@ -80,5 +81,5 @@ CustomAvatar.propTypes = {
     "error",
   ]),
 };
-
+CustomAvatar.displayName = "CustomAvatar";
 export default CustomAvatar;

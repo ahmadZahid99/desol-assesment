@@ -1,15 +1,26 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import { memo } from 'react';
+import { memo } from "react";
 // @mui
-import { Box, Switch, TablePagination, FormControlLabel } from '@mui/material';
+import { Box, Switch, TablePagination, FormControlLabel } from "@mui/material";
 
 // ----------------------------------------------------------------------
 
 const TablePaginationCustom = memo(
-  ({ dense, onChangeDense, rowsPerPageOptions = [5, 10, 25], filters, sx, ...other }) => (
-    <Box sx={{ position: 'relative', ...sx }}>
-      <TablePagination rowsPerPageOptions={rowsPerPageOptions} component="div" {...other} />
+  ({
+    dense,
+    onChangeDense,
+    rowsPerPageOptions = [5, 10, 25],
+    filters,
+    sx,
+    ...other
+  }) => (
+    <Box sx={{ position: "relative", ...sx }}>
+      <TablePagination
+        rowsPerPageOptions={rowsPerPageOptions}
+        component="div"
+        {...other}
+      />
 
       {filters}
 
@@ -23,7 +34,7 @@ const TablePaginationCustom = memo(
             py: 1.5,
             top: 0,
             position: {
-              md: 'absolute',
+              md: "absolute",
             },
           }}
         />
@@ -39,5 +50,5 @@ TablePaginationCustom.propTypes = {
   sx: PropTypes.object,
   filters: PropTypes.node,
 };
-
+TablePaginationCustom.displayName = "TablePaginationCustom";
 export default TablePaginationCustom;

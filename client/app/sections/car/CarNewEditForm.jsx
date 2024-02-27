@@ -237,5 +237,5 @@ CarNewEditForm.propTypes = {
   handleSubmited: PropTypes.func,
   handleData: PropTypes.func,
 };
-
+CarNewEditForm.displayName = "CarNewEditForm";
 export default connect(null, {})(CarNewEditForm);

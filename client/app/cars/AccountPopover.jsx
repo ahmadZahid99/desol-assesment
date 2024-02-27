@@ -1,3 +1,4 @@
+"use client";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { useState, memo } from "react";
@@ -101,7 +102,7 @@ AccountPopover.propTypes = {
 const mapStateToProps = (state) => ({
   Auth: state.Auth,
 });
-
+AccountPopover.displayName = "AccountPopover";
 export default connect(mapStateToProps, {
   logout: logoutRequest,
 })(AccountPopover);

@@ -86,5 +86,5 @@ ImageComponent.propTypes = {
     "1/1",
   ]),
 };
-
+ImageComponent.displayName = "ImageComponent";
 export default ImageComponent;
