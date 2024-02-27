@@ -62,17 +62,17 @@ export default function CarItem({ car }) {
         p: (theme) => theme.spacing(2.5, 2.5, 2, 2.5),
       }}
       secondary={
-        <Link
-          // variant="subtitle2"
-          // underline="hover"
-          href={`/car/${id}`}
-          // color="inherit"
-          style={{
-            textDecoration: "none",
-          }}
-        >
-          {carModel}
-        </Link>
+        // <Link
+        //   // variant="subtitle2"
+        //   // underline="hover"
+        //   href={`/car/${id}`}
+        //   // color="inherit"
+        //   style={{
+        //     textDecoration: "none",
+        //   }}
+        // >
+        <Typography variant="h5">{carModel}</Typography>
+        // </Link>
       }
       primaryTypographyProps={{
         typography: "caption",
