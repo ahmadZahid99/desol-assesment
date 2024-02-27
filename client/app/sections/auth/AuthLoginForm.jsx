@@ -55,7 +55,7 @@ function AuthLoginForm({
   } = methods;
 
   const onSubmit = async (data) => {
-    loginUser({ email: data.email, password: data.password });
+    loginUser({ email: data.email.toLowerCase(), password: data.password });
   };
 
   return (
